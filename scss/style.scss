@@ -33,16 +33,17 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // @include xs {
-  //   padding: 5rem 2rem;
-  // }
+  @include xs {
+    padding: 5rem 2rem;
+  }
   h1 {
     font-size: 6rem;
     line-height: 5rem;
     font-weight: 300;
     letter-spacing: 3rem;
     @include xs {
-      font-size: 3.5rem;
+      font-size: 3rem;
+      letter-spacing: 2.5rem;
     }
   }
   p {
@@ -148,10 +149,10 @@ aside {
 
 main {
   grid-area: main;
-  padding: 2rem 5rem 5rem 5rem;
+  padding: 2.5rem 5rem 5rem 5rem;
   border-right: 1px solid var(--border);
   @include xs {
-    padding: 4rem 1.5rem;
+    padding: 4rem 3rem;
   }
   .text-small-font{
     padding-left: 0.3rem;
@@ -306,7 +307,7 @@ footer {
   color: white;
   padding: 3rem;
   @include xs {
-    padding: 5rem 1.5rem;
+    padding: 5rem 1rem;
   }
   background: var(--text);
   h2 {
@@ -345,7 +346,7 @@ footer {
       border: 0;
       min-width: 400px;
       @include xs {
-        min-width: 200px;
+        min-width: 190px;
       }
       padding: 1rem 2rem;
       line-height: 2rem;

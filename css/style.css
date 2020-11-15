@@ -84,6 +84,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 480px) {
+    header {
+      padding: 5rem 2rem; } }
   header h1 {
     font-size: 6rem;
     line-height: 5rem;
@@ -91,7 +94,8 @@ header {
     letter-spacing: 3rem; }
     @media (max-width: 480px) {
       header h1 {
-        font-size: 3.5rem; } }
+        font-size: 3rem;
+        letter-spacing: 2.5rem; } }
   header p {
     letter-spacing: 0.5rem; }
   header span {
@@ -176,11 +180,11 @@ aside {
 
 main {
   grid-area: main;
-  padding: 2rem 5rem 5rem 5rem;
+  padding: 2.5rem 5rem 5rem 5rem;
   border-right: 1px solid var(--border); }
   @media (max-width: 480px) {
     main {
-      padding: 4rem 1.5rem; } }
+      padding: 4rem 3rem; } }
   main .text-small-font {
     padding-left: 0.3rem;
     background: linear-gradient(to left, var(--primary), var(--light)); }
@@ -295,7 +299,7 @@ footer {
   background: var(--text); }
   @media (max-width: 480px) {
     footer {
-      padding: 5rem 1.5rem; } }
+      padding: 5rem 1rem; } }
   footer h2 {
     margin-bottom: 3rem; }
   footer form {
@@ -330,6 +334,6 @@ footer {
       line-height: 2rem; }
       @media (max-width: 480px) {
         footer form input {
-          min-width: 200px; } }
+          min-width: 190px; } }
       footer form input::placeholder {
         color: var(--text); }
